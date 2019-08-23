@@ -69,7 +69,7 @@ app.get("/api/burgers", function(req, res) {
 
 // Update a movie
 app.put("/api/burgers/:id", function(req, res) {
-  connection.query("UPDATE movies SET burger_name = ? WHERE id = ?", [req.body.burger_name, req.params.id], function(err, result) {
+  connection.query("UPDATE burgers SET burger_name = ? WHERE id = ?", [req.body.burger_name, req.params.id], function(err, result) {
     if (err) {
       // If an error occurred, send a generic server failure
       return res.status(500).end();
@@ -85,7 +85,7 @@ app.put("/api/burgers/:id", function(req, res) {
 
 // Delete a movie
 app.delete("/api/burgers/:id", function(req, res) {
-  connection.query("DELETE FROM movies WHERE id = ?", [req.params.id], function(err, result) {
+  connection.query("DELETE FROM burgers WHERE id = ?", [req.params.id], function(err, result) {
     if (err) {
       // If an error occurred, send a generic server failure
       return res.status(500).end();
