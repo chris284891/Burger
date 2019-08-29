@@ -11,7 +11,7 @@ var orm = {
       })
   },
   insertOne: function(tableName, columnName, columnValue, cb){
-      var queryString = `INSERT INTO ${tableName} (${columnName}) VALUES (?);`
+      var queryString = `INSERT INTO ${tableName}(${columnName}, devoured) VALUES (?, false);`
 
       connection.query(queryString, columnValue, function(err, result){
           if (err) {throw err};
