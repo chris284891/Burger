@@ -4,7 +4,8 @@ $(function(){
         event.preventDefault();
 
         var newBurger = {
-            burger_name: $("#ca").val().trim()
+            burger_name: $("#ca").val().trim(),
+            devoured: false
         };
 
         $.ajax("/api/burgers", {
@@ -20,7 +21,7 @@ $(function(){
 
     $(".change-eaten").on("click", function(event){
         event.preventDefault();
-        console.log("Munch Munch")
+        console.log("Chomp")
 
         var id = $(this).data("id");
         var newDevoured = true;
