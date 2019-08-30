@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white
+}
+
+.jumbotron {
+    background-color: black;
+    color: white
+}
+
+button {
+    background-color: #b30000;
+    color: white;
+}
+
+input {
+    background-color:  #343a40;
+    color: white;
+}
