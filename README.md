@@ -2,7 +2,7 @@
 https://serene-thicket-33141.herokuapp.com/
 
 # Burger
-This is my first handlebars application.
+This is an app that moves elements from one state to another and then organizes them on the display.
 
 # Problem
 Make a handlebars and database app where the user can add something to the database and update a value in one of the columns.
@@ -22,10 +22,23 @@ Made a database with a whole bunch of files to put and post to said database. Ma
 - Routers
 
 # Instructions
-First clone or download the repo. Then open a console program of your choice and navigate to the root file. Then enter in "node server.js" or "npm start" into your console and then enter "localhost:3000" into your browser. Or just go to the heroku link.
+Add a burger in the text box then it should come up in the "burgers needed to be devoured box". Then click on devour for the burger to be moved over to the devoured list.
 
 # Getting Started
-If you want to edit this code. Just open any of the files and copy-&-paste the code into any coding program of your choice, perform a git clone, or download straight from github.
+Click on green button "Clone or download" and copy link. Run a "git clone {link}" in [Git Bash](https://gitforwindows.org/ "Git bash download page")(PC) or Terminal(Mac).
 
+enter in "cd" space "name of app" and then run the following command:
+
+```
+npm install
+```
+
+This should install all required node modules.
+
+After installations are completed run the following command:
+
+```
+npm start
+```
 # Prequisites
-Have node.js installed.
+Have a current updated browser
